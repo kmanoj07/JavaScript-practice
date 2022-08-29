@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <div class="wrapper">
+        <h1>Get Weather</h1>
+        <input type='text' id='city-input' placeholder='location/city' value=''/>
+        <button id='btnSearch' onclick="searchCity()" >Search</button>
+
+        <div class='main-data-display'>
+            <div class='blc-city-name'>
+                <h4 id='city-name'>-----</h4>
+            </div>
+            <div class='card-body'>
+                <h1 id='weather-type'>-----</h1>
+                <ul style='list-style-type: none;'>
+                    <li>Temp: <span id='temp'>---</span></li>
+                    <li>Latitude: <span id='lat'>---</span></li>
+                    <li>Longitude: <span id='long'>---</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
